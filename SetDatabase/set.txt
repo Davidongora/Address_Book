@@ -1,0 +1,23 @@
+-- Create the database
+CREATE DATABASE Address_Book;
+
+-- Use the database
+USE Address_Book;
+
+-- Create the Address table
+CREATE TABLE Address (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  Name VARCHAR(255) NOT NULL,
+  FirstName VARCHAR(255) NOT NULL,
+  Email VARCHAR(255) NOT NULL,
+  Street VARCHAR(255) NOT NULL,
+  ZipCode VARCHAR(10) NOT NULL,
+  City VARCHAR(255) NOT NULL
+);
+
+-- Insert sample data into the Address table
+INSERT INTO Address (Name, FirstName, Email, Street, ZipCode, City)
+VALUES ('Doe', 'John', 'john.doe@example.com', '123 Main St', '12345', 'Cityville');
+
+INSERT INTO Address (Name, FirstName, Email, Street, ZipCode, City)
+VALUES ('Smith', 'Jane', 'jane.smith@example.com', '456 Elm St', '67890', 'Townsville');
