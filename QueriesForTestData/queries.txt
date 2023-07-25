@@ -1,0 +1,15 @@
+-- Use the database
+USE Address_Book;
+
+-- Insert test data into the Address table
+INSERT INTO Address (Name, FirstName, Email, Street, ZipCode, City)
+VALUES ('Doe', 'John', 'john.doe@example.com', '123 Main St', '12345', 'Cityville');
+
+INSERT INTO Address (Name, FirstName, Email, Street, ZipCode, City)
+VALUES ('Smith', 'Jane', 'jane.smith@example.com', '456 Elm St', '67890', 'Townsville');
+
+INSERT INTO Address (Name, FirstName, Email, Street, ZipCode, City)
+VALUES ('Johnson', 'Robert', 'robert.johnson@example.com', '789 Oak Ave', '54321', 'Villagetown');
+
+INSERT INTO Address (Name, FirstName, Email, Street, ZipCode, City)
+VALUES ('Williams', 'Sarah', 'sarah.williams@example.com', '321 Pine St', '98765', 'Townsville');
