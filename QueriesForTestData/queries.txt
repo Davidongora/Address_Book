@@ -13,3 +13,27 @@ VALUES ('Johnson', 'Robert', 'robert.johnson@example.com', '789 Oak Ave', '54321
 
 INSERT INTO Address (Name, FirstName, Email, Street, ZipCode, City)
 VALUES ('Williams', 'Sarah', 'sarah.williams@example.com', '321 Pine St', '98765', 'Townsville');
+
+Dropping the database
+
+DROP DATABASE IF EXISTS Address_Book
+
+Deleting the Table 
+
+DROP TABLE IF EXISTS Address; 
+
+Deleting a particular record
+
+"DELETE FROM entries WHERE Address_id = addressIdToDelete";
+
+
+updating the records
+UPDATE entries
+SET name = 'New Name',
+    first_name = 'New First Name',
+    email = 'new_email@example.com',
+    street = 'New Street Address',
+    zip_code = 'New Zip Code',
+    city_id = 2
+WHERE entry_id = 123;
+
